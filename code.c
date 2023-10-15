@@ -31,7 +31,7 @@ void print_board(STACK* ps){
 
 int check_horizontal(STACK* ps,int token){
     for(int i=0;i<ROW;i++){
-        for(int j=0;j<COL-4;j++){
+        for(int j=0;j<=COL-4;j++){
             if(ps->arr[i][j] == ps->arr[i][j+1] && ps->arr[i][j+1] == ps->arr[i][j+2] && ps->arr[i][j+2] == ps->arr[i][j+3] && ps->arr[i][j]==token){
                 return token;
             }
